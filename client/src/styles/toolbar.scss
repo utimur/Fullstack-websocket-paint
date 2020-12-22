@@ -1,0 +1,60 @@
+@import "./variables";
+
+.toolbar {
+  height: $toolbar-height;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  box-shadow: 0 4px 5px gray;
+  z-index: 999;
+
+  &__btn {
+    height: 25px;
+    width: 25px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-size: cover;
+    margin-left: 10px;
+  }
+  .brush {
+    background: url('../assets/img/brush.png') no-repeat center center;
+  }
+  .rect {
+    background: url('../assets/img/rect.png') no-repeat center center;
+  }
+  .circle {
+    background: url('../assets/img/circle.png') no-repeat center center;
+  }
+  .eraser {
+    background: url('../assets/img/eraser.png') no-repeat center center;
+  }
+  .line {
+    background: url('../assets/img/line.png') no-repeat center center;
+  }
+  .undo {
+    margin-left: auto;
+    background: url('../assets/img/undo.png') no-repeat center center;
+  }
+  .redo {
+    background: url('../assets/img/redo.png') no-repeat center center;
+  }
+  .save {
+    background: url('../assets/img/save.png') no-repeat center center;
+    margin-right: 10px;
+  }
+}
+
+
+.setting-bar {
+  height: $toolbar-height;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  box-shadow: 0 4px 5px gray;
+  top:$toolbar-height;
+}
